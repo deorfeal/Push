@@ -8,6 +8,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/theme-light.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -15,7 +21,7 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <button class="header__burger burger" type="button">
+                <button class="header__burger burger u-mobile-menu-switcher" type="button">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="40" height="40" rx="4" fill="#BED732" />
                         <rect x="9" y="9" width="22" height="2" rx="1" fill="white" />
@@ -114,26 +120,41 @@
                         <p class="lang__current-text">
                             RU
                         </p>
-                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="lang__current-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M4.99997 5.85018C4.82075 5.85018 4.64155 5.78175 4.50492 5.64518L0.205141 1.34536C-0.0683805 1.07184 -0.0683805 0.628372 0.205141 0.354961C0.478553 0.0815496 0.921933 0.0815496 1.19548 0.354961L4.99997 4.15968L8.80449 0.355094C9.07801 0.0816825 9.52135 0.0816825 9.79474 0.355094C10.0684 0.628505 10.0684 1.07197 9.79474 1.34549L5.49503 5.64531C5.35832 5.78191 5.17913 5.85018 4.99997 5.85018Z"
                                 fill="black" />
                         </svg>
+                        <div class="lang__current-flag">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="25" height="25" rx="12.5" fill="url(#pattern0)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_123_2347"
+                                            transform="translate(-0.25188) scale(0.0075188)" />
+                                    </pattern>
+                                    <image id="image0_123_2347" width="200" height="133"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAIAAACR/CB7AAAC2UlEQVR4Ae3VQY1cURAEwY/EBPbqyxAwgiVjAxoixmA8YxKVh5ZiNefSVyhf7/PxRyAQeIJNkwQ+whJBIiCshNWosDSQCAgrYTUqLA0kAsJKWI0KSwOJgLASVqPC0kAiIKyE1aiwNJAICCthNSosDSQCwkpYjQpLA4mAsBJWo8LSQCIgrITVqLA0kAgIK2E1KiwNJALCSliNCksDiYCwElajwtJAIiCshNWosDSQCAgrYTUqLA0kAsJKWI0KSwOJgLASVqPC0kAiIKyE1aiwNJAICCthNSosDSQCwkpYjQpLA4mAsBJWo8LSQCIgrITV6PP9568fgbnA87zefgT2AvtFpRJ4vV0sB7sRcLEIJALJqP8FBIRFIBFIRr1XAsIikAgko94rAWERSASSUe+VgLAIJALJqPdKQFgEEoFk1HslICwCiUAy6r0SEBaBRCAZ9V4JCItAIpCMeq8EhEUgEUhGvVcCwiKQCCSj3isBYRFIBJJR75WAsAgkAsmo90pAWAQSgWTUeyUgLAKJQDLqvRIQFoFEIBn1XgkIi0AikIx6rwSERSARSEa9VwLCIpAIJKPeKwFhEUgEklHvlcCvn7/9CMwFnn9fP/wIzAWE5V0lAsJKWOcH4NygsISVCAgrYT13YOYfLCxhJQLCSljnB+DcoLCElQgIK2E9d2DmHywsYSUCwkpY5wfg3KCwhJUICCthPXdg5h8sLGElAsJKWOcH4NygsISVCAgrYT13YOYfLCxhJQLCSljnB+DcoLCElQgIK2E9d2DmHywsYSUCwkpY5wfg3KCwhJUICCthPXdg5h8sLGElAsJKWOcH4NygsISVCAgrYT13YOYfLCxhJQLCSljnB+DcoLCElQgIK2E9d2DmHywsYSUCwkpY5wfg3KCwhJUICCthPXdg5h8sLGElAsJKWOcH4NygsISVCAgrYT13YOYfLCxhJQLCSljnB+DcoLCElQj8B7isZL1otIZjAAAAAElFTkSuQmCC" />
+                                </defs>
+                            </svg>
+                        </div>
                     </div>
                     <ul class="lang__list">
                         <li class="lang__list-item">
                             <a class="lang__list-link" href="#">
-                                RU
+                                Русский
                             </a>
                         </li>
                         <li class="lang__list-item">
                             <a class="lang__list-link" href="#">
-                                UA
+                                Казахский
                             </a>
                         </li>
                         <li class="lang__list-item">
                             <a class="lang__list-link" href="#">
-                                EN
+                                Английский
                             </a>
                         </li>
                     </ul>
@@ -141,6 +162,7 @@
                 <a class="header__phone phone phone--small" href="tel:2470">
                     <div class="phone__icon">
                         <img class="phone__icon-img" src="images/phone-icon.svg" alt="phone">
+                        <img class="phone__icon-img" src="images/phone-icon-white.svg" alt="phone">
                     </div>
                     2470
                 </a>
@@ -149,6 +171,77 @@
     </header>
     <div class="wrapper">
         <main class="main">
+            <!-- Universal Mobile Menu -->
+            <div class="u-mobile-menu">
+                <div class="u-mobile-menu__wrapper">
+                    <!-- Логотип -->
+                    <a href="#" class="logo">
+                        <img src="images/black-logo.svg" alt="">
+                    </a>
+                    <div class="u-mobile-menu__content">
+                        <!-- Навигация -->
+                        <ul class="u-nav-group">
+                            <li><a href="#"><span>О компании</span></a></li>
+                            <li class="highlight-1">
+                                <a href="#"><span>Сервис</span></a>
+                                <div class="u-nav-wrapper">
+                                    <div class="u-nav-content">
+                                        <ul>
+                                            <li><a href="#"><span>Доставка</span></a></li>
+                                            <li><a href="#"><span>Оплата</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#"><span>Для трендов</span></a></li>
+                            <li><a href="#"><span>Аренда</span></a></li>
+                            <li><a href="#"><span>Контакты</span></a></li>
+                        </ul>
+                        <!-- Выбор языка -->
+                        <ul class="u-nav-group langs">
+                            <li>
+                                <a href="#"><img src="images/rus.png" alt=""><span>Русский</span></a>
+                                <div class="u-nav-wrapper">
+                                    <div class="u-nav-content">
+                                        <ul>
+                                            <li><a href="#"><img src="images/rus.png" alt=""><span>Русский</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="images/eng.png" alt=""><span>Английский</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="images/ukr.png" alt=""><span>Украинский</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Контакты -->
+                        <div class="contacts">
+                            <a href="#" class="contacts__item"><i class="fas fa-phone-alt"></i><span>+380 44 290
+                                    3833</span></a>
+                            <a href="#" class="contacts__item"><i class="fas fa-phone-alt"></i><span>+7 499 648 20
+                                    47</span></a>
+                            <a href="#" class="contacts__item"><i
+                                    class="fas fa-envelope"></i><span>support@okay-cms.com</span></a>
+                        </div>
+                        <div class="markets">
+                            <a class="markets__link" href="#">
+                                <picture class="markets__link-img lozad">
+                                    <img src="images/app-store-icon.svg" alt="img">
+                                </picture>
+                            </a>
+                            <a class="markets__link" href="#">
+                                <picture class="markets__link-img lozad">
+                                    <img src="images/google-play-icon.svg" alt="img">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="u-mobile-menu__close">Закрыть</button>
+                </div>
+            </div>
+            <div class="u-menu-overlay"></div>
+            <!-- Universal Mobile Menu End -->
             <section class="main__heading heading">
                 <div class="container">
                     <div class="heading__inner">
@@ -210,59 +303,69 @@
                         <div class="services__body services-body">
                             <ul class="services-body__list services-list">
                                 <li class="services-list__item" data-aos="zoom-out">
-                                    <picture class="services-list__img lozad">
-                                        <img src="images/services-icon-1.svg" alt="icon">
-                                    </picture>
-                                    <h4 class="services-list__title">
-                                        Эвакуатор
-                                    </h4>
-                                    <p class="services-list__text">
-                                        5000₸
-                                    </p>
+                                    <a class="services-list__lnk" href="#">
+                                        <picture class="services-list__img lozad">
+                                            <img src="images/services-icon-1.svg" alt="icon">
+                                        </picture>
+                                        <h4 class="services-list__title">
+                                            Эвакуатор
+                                        </h4>
+                                        <p class="services-list__text">
+                                            5000₸
+                                        </p>
+                                    </a>
                                 </li>
                                 <li class="services-list__item" data-aos="zoom-out">
-                                    <picture class="services-list__img lozad">
-                                        <img src="images/services-icon-2.svg" alt="icon">
-                                    </picture>
-                                    <h4 class="services-list__title">
-                                        Шиномонтаж
-                                    </h4>
-                                    <p class="services-list__text">
-                                        3000₸
-                                    </p>
+                                    <a class="services-list__lnk" href="#">
+                                        <picture class="services-list__img lozad">
+                                            <img src="images/services-icon-2.svg" alt="icon">
+                                        </picture>
+                                        <h4 class="services-list__title">
+                                            Шиномонтаж
+                                        </h4>
+                                        <p class="services-list__text">
+                                            3000₸
+                                        </p>
+                                    </a>
                                 </li>
                                 <li class="services-list__item" data-aos="zoom-out">
-                                    <picture class="services-list__img lozad">
-                                        <img src="images/services-icon-3.svg" alt="icon">
-                                    </picture>
-                                    <h4 class="services-list__title">
-                                        Разблокировка
-                                    </h4>
-                                    <p class="services-list__text">
-                                        3000₸
-                                    </p>
+                                    <a class="services-list__lnk" href="#">
+                                        <picture class="services-list__img lozad">
+                                            <img src="images/services-icon-3.svg" alt="icon">
+                                        </picture>
+                                        <h4 class="services-list__title">
+                                            Разблокировка
+                                        </h4>
+                                        <p class="services-list__text">
+                                            3000₸
+                                        </p>
+                                    </a>
                                 </li>
                                 <li class="services-list__item" data-aos="zoom-out">
-                                    <picture class="services-list__img lozad">
-                                        <img src="images/services-icon-4.svg" alt="icon">
-                                    </picture>
-                                    <h4 class="services-list__title">
-                                        Заряд аккумулятора
-                                    </h4>
-                                    <p class="services-list__text">
-                                        2000₸
-                                    </p>
+                                    <a class="services-list__lnk" href="#">
+                                        <picture class="services-list__img lozad">
+                                            <img src="images/services-icon-4.svg" alt="icon">
+                                        </picture>
+                                        <h4 class="services-list__title">
+                                            Заряд аккумулятора
+                                        </h4>
+                                        <p class="services-list__text">
+                                            2000₸
+                                        </p>
+                                    </a>
                                 </li>
                                 <li class="services-list__item" data-aos="zoom-out">
-                                    <picture class="services-list__img lozad">
-                                        <img src="images/services-icon-5.svg" alt="icon">
-                                    </picture>
-                                    <h4 class="services-list__title">
-                                        Трезвый водитель
-                                    </h4>
-                                    <p class="services-list__text">
-                                        2000₸
-                                    </p>
+                                    <a class="services-list__lnk" href="#">
+                                        <picture class="services-list__img lozad">
+                                            <img src="images/services-icon-5.svg" alt="icon">
+                                        </picture>
+                                        <h4 class="services-list__title">
+                                            Трезвый водитель
+                                        </h4>
+                                        <p class="services-list__text">
+                                            2000₸
+                                        </p>
+                                    </a>
                                 </li>
                                 <li class="services-list__item services-list__item--link" data-aos="zoom-out">
                                     <a class="services-list__link" href="#">
@@ -1162,7 +1265,7 @@
                                             <img src="images/news-img-1.png" alt="img">
                                         </picture>
                                         <h3 class="news-item__title">
-                                            350 зарядок по Казахстану 
+                                            350 зарядок по Казахстану
                                         </h3>
                                         <a class="news-item__link btn" href="#">
                                             Подробнее
@@ -1201,7 +1304,7 @@
                                             <img src="images/news-img-1.png" alt="img">
                                         </picture>
                                         <h3 class="news-item__title">
-                                            350 зарядок по Казахстану 
+                                            350 зарядок по Казахстану
                                         </h3>
                                         <a class="news-item__link btn" href="#">
                                             Подробнее
@@ -2135,6 +2238,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript" src="js/menu.js"></script>
+
     <script src="js/main.min.js"></script>
 </body>
 
