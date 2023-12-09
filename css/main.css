@@ -133,12 +133,13 @@ body.u-mobile-menu-open .u-mobile-menu{
 }
 
 
+
 /* Контакты */
-.contacts{
+.u-mobile-menu .contacts{
 	padding: 15px 0;
 	border-bottom: 1px solid var(--u-menu-border-color);
 }
-.contacts__item{
+.u-mobile-menu .contacts__item{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -151,10 +152,10 @@ body.u-mobile-menu-open .u-mobile-menu{
 	color: var(--u-menu-text-color);
 	font-weight: 600;
 }
-.contacts__item:active{
+.u-mobile-menu .contacts__item:active{
 	background: var(--u-menu-active-color);
 }
-.contacts__item i{
+.u-mobile-menu .contacts__item i{
 	margin-right: 7px;
 	color: var(--u-menu-theme-color);
 	font-size: 12px;
